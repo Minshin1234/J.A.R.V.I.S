@@ -123,7 +123,7 @@ if __name__ == '__main__':
             speak(random.choice(stMsg1))
             webbrowser.open('https://www.youtube.com/channel/UCjgpFI5dU-D1-kh9H1muoxQ')
             
-        elif 'play vbs song playlist' in query:
+        elif 'play playlist' in query:
             stMsg1 = ['already on it sir','yes sir','whatever you say sir']
             speak(random.choice(stMsg1))
             webbrowser.open('https://www.youtube.com/watch?v=KSURGdQediE&list=RDQMY7R65JS8p_U&start_radio=1')
