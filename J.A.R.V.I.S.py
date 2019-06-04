@@ -11,7 +11,7 @@ import sys
 from mss import mss
 engine = pyttsx3.init('sapi5')
 
-client = wolframalpha.Client('X9U37K-JYW2TAEQ52')
+client = wolframalpha.Client('your_own_ID')
 
 voices = engine.getProperty('voices')
 
@@ -24,7 +24,7 @@ def speak(audio):
     engine.runAndWait()
 
 speak('Hello my name is JARVIS welcome back')
-speak('Hello Mr.Shin')
+speak('Hello Mr.Your last name')
 speak('Please stand by sir, giving you full access')
 speak('25%')
 speak('50%')
@@ -141,8 +141,8 @@ if __name__ == '__main__':
                     server = smtplib.SMTP('smtp.gmail.com', 587)
                     server.ehlo()
                     server.starttls()
-                    server.login("21mincshin@gmail.com", "21197909126426")
-                    server.sendmail("21mincshin@gmail.com","21mincshin@gmail.com" , content)
+                    server.login("email", "password")
+                    server.sendmail("email","email" , content)
                     server.close()
                     speak('Email sent!')
                 except:
