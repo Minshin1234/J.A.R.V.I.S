@@ -135,8 +135,8 @@ if __name__ == '__main__':
                     server = smtplib.SMTP('smtp.gmail.com', 587)
                     server.ehlo()
                     server.starttls()
-                    server.login("21mincshin@gmail.com", "21197909126426")
-                    server.sendmail("21mincshin@gmail.com","21mincshin@gmail.com" , content)
+                    server.login("","")
+                    server.sendmail(""," " , content)
                     server.close()
                     subprocess.call(["afplay","jarvis_email_sent.mp3"])
                 except:
